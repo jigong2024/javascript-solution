@@ -22,7 +22,7 @@ async function fetchComments() {
     const commentsDiv = document.getElementById("comments");
 
     slicedData.forEach((comment) => {
-      //   console.log(comment);
+      // console.log(comment);
       let slicedBody = "";
 
       // 4. 여기에 slice 메서드를 활용하여
@@ -30,7 +30,7 @@ async function fetchComments() {
       //    0번째부터 39번째 문자를 복사하고 맨 뒤에 "..."을 붙인 문자열을
       //    slicedBody라는 변수에 할당해주세요.
 
-      if (comment.body >= 40) {
+      if (comment.body.length >= 40) {
         slicedBody = comment.body.slice(0, 39) + "...";
       } else {
         slicedBody = comment.body;
