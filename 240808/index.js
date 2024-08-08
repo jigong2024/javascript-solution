@@ -48,3 +48,5 @@ async function fetchComments() {
     console.error("오류", error);
   }
 }
+
+//5회차 js 실습 완료
